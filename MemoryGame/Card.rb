@@ -23,6 +23,7 @@ class Card
     def hide
         if @face_up
             @face_up = false
+
         end
     end
 
@@ -37,9 +38,9 @@ class Card
         @face_value.to_s
     end
 
-    def ==(another_card)
-        return @face_value == another_card.face_value
-    end
+    # def ==(another_card)
+    #     return @face_value == another_card.face_value
+    # end
 end
 
 card1 = Card.new(:L)
@@ -48,7 +49,7 @@ card3 = Card.new(:L)
 card4 = Card.new(:O)
 
 # p card1
-card1.reveal
+# card1.reveal
 
 # card1.hide
 
