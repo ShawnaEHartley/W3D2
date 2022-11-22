@@ -50,6 +50,20 @@ class Board
         end
     end
 
+    def won?
+        @board.all? do |row|
+            row.all? do |card|
+                card.face_up
+            end
+        end
+    end
+
+    def reveal(guessed_pos)
+        if !self.[](guessed_pos).face_up
+            return self.[](guessed_pos).face_value            
+        end
+    end
+
 end
 
 
@@ -61,5 +75,8 @@ board.populate
 # p board.empty?([0, 2])
 # p board.board[0][2]
 board.render
+# p board.won?
+
+p board.reveal([2,3])
 
 
