@@ -67,16 +67,16 @@ class Board
 end
 
 
-board = Board.new
+# board = Board.new
 # p board.empty?([2,2])
 # p board.empty?([0,2])
 # board.[]=([0, 2], Card.new(:U))
-board.populate
+# board.populate
 # p board.empty?([0, 2])
 # p board.board[0][2]
-board.render
+# board.render
 # p board.won?
 
-p board.reveal([2,3])
+# p board.reveal([2,3])
 
 
